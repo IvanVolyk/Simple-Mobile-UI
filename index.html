@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mobile UI Design | Html CSS and jQuery</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css"/>
+  <script src="script.js"></script>
+</head>
+<body> <!-- https://youtu.be/_22wyaIWA5Y -->
+	<div class="mobile">
+		<div class="top"></div>
+		<div class="bottom">
+			<div class="btn"></div>
+		</div>
+		<div class="screen">
+			<img src="./img/evening.jpeg" alt="#">
+			<h2>10:40<br><span>ЧТ, 27 ИЮН.</span></h2>
+			<ul>
+				<li><i class="fas fa-phone-alt"></i></li>
+				<li><i class="far fa-comment"></i></li>
+				<li><i class="far fa-image"></i></li>
+				<li><i class="fas fa-camera"></i></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+		
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.btn').click(function(){
+				$('.screen').toggleClass('active')
+			})
+		})
+		
+	</script>
+
+<script src="https://kit.fontawesome.com/6a3ebbf805.js"></script>
+</body>
+</html>
